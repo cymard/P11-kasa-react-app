@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './page/home';
-import About from './page/about';
+import About from './page/about/about';
 import HousingInformation from './page/housingInformation';
 import Error404 from './page/error404';
 
