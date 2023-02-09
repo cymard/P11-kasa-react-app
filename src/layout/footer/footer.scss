@@ -1,0 +1,22 @@
+@import "../../style/variable";
+
+footer {
+    border: 1px solid black;
+    background-color: black;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        height: 20px;
+        width: 60px;
+        margin: 20px 0 20px 0;
+    }
+
+    p {
+        font-family: $font-stack;
+    }
+}

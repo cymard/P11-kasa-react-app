@@ -1,0 +1,15 @@
+@import "../../style/variable";
+
+.cardAccommodation {
+    background: linear-gradient(180deg, $color-theme-primary 70%, rgba(0, 0, 0, 1) 120%);
+    border-radius: 10px;
+    position: relative;
+
+    p {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        font-family: $font-stack;
+        width: 40%;
+    }
+}

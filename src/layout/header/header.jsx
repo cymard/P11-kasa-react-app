@@ -1,14 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import kasaLogoOrange from '../../images/logo/LOGO-orange.png';
+import './header.scss';
 
 function Header () {
-    return <nav>
-        <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/housing-information'>Housing information</Link></li>
-            <li><Link to='/about'>About</Link></li>
-        </ul>
-    </nav>
+    return <header>
+        <img src={kasaLogoOrange} alt='logo KASA orange'/>
+        <nav>
+            <ul>
+                <li><Link to='/'>Accueil</Link></li>
+                <li><Link to='/about'>A Propos</Link></li>
+            </ul>
+        </nav>
+    </header>
 }
 
 export default Header;

@@ -1,0 +1,30 @@
+@import '../../style/style';
+@import '../../style/_variable.scss';
+
+.banner {
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .overlayImg {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        width: 100%;
+        border-radius: 25px;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-family: $font-stack;
+            font-weight: 500;
+            font-size: 35px;
+        }
+    }
+}

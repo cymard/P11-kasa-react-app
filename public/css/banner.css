@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+p {
+  color: white;
+}
+
+.banner {
+  position: relative;
+}
+.banner img {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+}
+.banner .overlayImg {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .overlayImg p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+/*# sourceMappingURL=banner.css.map */
