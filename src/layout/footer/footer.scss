@@ -19,4 +19,18 @@ footer {
     p {
         font-family: $font-stack;
     }
+
+    @media only screen and (max-width : 375px) {
+        height: 200px;
+
+        img {
+            height: 40px;
+            width: auto;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
 }

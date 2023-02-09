@@ -16,5 +16,18 @@ footer img {
 footer p {
   font-family: "Montserrat", sans-serif;
 }
+@media only screen and (max-width: 375px) {
+  footer {
+    height: 200px;
+  }
+  footer img {
+    height: 40px;
+    width: auto;
+    margin-top: 0;
+  }
+  footer p {
+    font-size: 12px;
+  }
+}
 
 /*# sourceMappingURL=footer.css.map */
