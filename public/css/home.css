@@ -13,5 +13,17 @@ main section {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 340px);
 }
+@media only screen and (max-width: 375px) {
+  main {
+    padding: 0 20px 0 20px;
+  }
+  main section {
+    padding: 0;
+    background-color: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 255px);
+    grid-gap: 20px;
+  }
+}
 
 /*# sourceMappingURL=home.css.map */

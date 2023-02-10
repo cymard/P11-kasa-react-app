@@ -26,7 +26,6 @@ header ul li:nth-of-type(1) a {
 }
 @media only screen and (max-width: 375px) {
   header {
-    margin-bottom: 50px;
     padding: 20px;
   }
   header img {
