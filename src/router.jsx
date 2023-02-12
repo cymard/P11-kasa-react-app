@@ -2,15 +2,15 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './page/home/home';
 import About from './page/about/about';
-import HousingInformation from './page/housingInformation';
+import Accommodation from './page/accommodation/accommodation';
 import Error404 from './page/error404';
 
 function Router () {
     return <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/housing-information' element={<HousingInformation/>} />
+        <Route path='/accommodation' element={<Accommodation/>} />
         <Route path='/about' element={<About/>} />
-        <Route path="*" element={<Error404 />} />
+        <Route path='*' element={<Error404 />} />
     </Routes>
 }
 
