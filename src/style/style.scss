@@ -1,5 +1,8 @@
+@import './_variable.scss';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
 
 p {
     color: white;
+    font-family: $font-stack;
+    font-weight: 500;
 }

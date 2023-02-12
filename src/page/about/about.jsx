@@ -5,7 +5,7 @@ import Header from '../../layout/header/header';
 function About () {
 
     return <React.Fragment>
-        <Header pageName='about' />
+        <Header pageName='about'/>
         <div className='test'>About</div>
     </React.Fragment>
 }

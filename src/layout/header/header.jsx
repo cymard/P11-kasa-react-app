@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import kasaLogoOrange from '../../images/logo/LOGO-orange.png';
+import kasaLogoOrange from './headerImages/LOGO-orange.png';
 import './header.scss';
 
 function Header ({pageName}) {

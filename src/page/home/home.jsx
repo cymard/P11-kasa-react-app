@@ -15,22 +15,20 @@ function Home() {
     }, [])
 
     return <React.Fragment>
-        { dataAccommodation.length > 0 && <React.Fragment>
-                <Header pageName='home' />
-                <main>
-                    <Banner src={paysageMer} alt="image d\'un paysage">Chez vous, partout et ailleurs</Banner>
-                    <section>
-                        { dataAccommodation.map((accommodation) =>
-                            <CardAccommodation
-                                img={accommodation.cover}
-                                key={accommodation.id}
-                            >
-                                {accommodation.title}
-                            </CardAccommodation>
-                        )}
-                    </section>
-                </main>
-            </React.Fragment>
+        <Header pageName='home'/>
+        { dataAccommodation.length > 0 && <main>
+                <Banner src={paysageMer} alt="image d\'un paysage">Chez vous, partout et ailleurs</Banner>
+                <section>
+                    { dataAccommodation.map(accommodation =>
+                        <CardAccommodation
+                            img={accommodation.cover}
+                            key={accommodation.id}
+                        >
+                            {accommodation.title}
+                        </CardAccommodation>
+                    )}
+                </section>
+            </main>
         }
     </React.Fragment>
 }
