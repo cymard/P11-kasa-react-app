@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 import kasaLogoOrange from '../../images/logo/LOGO-orange.png';
 import './header.scss';
 
-function Header () {
+function Header ({pageName}) {
     return <header>
         <img src={kasaLogoOrange} alt='logo KASA orange'/>
         <nav>
             <ul>
-                <li><Link to='/'>Accueil</Link></li>
-                <li><Link to='/about'>A Propos</Link></li>
+                <li><Link className={pageName === 'home' ? 'underline' : null} to='/'>Accueil</Link></li>
+                <li><Link className={pageName === 'about' ? 'underline' : null}  to='/about'>A Propos</Link></li>
             </ul>
         </nav>
     </header>
