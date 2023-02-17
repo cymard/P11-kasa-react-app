@@ -6,18 +6,12 @@ import paysageMer from './images/paysage-mer.png';
 import Header from '../../layout/header/header';
 
 function Home() {
-
     const [dataAccommodation, setDataAccommodation] = useState([]);
 
     useEffect(() => {
         fetch('data.json')
-            .then((response) => {
-                return response.json()
-            })
-            .then((data) => {
-                    setDataAccommodation(data)
-                }
-            )
+            .then((response) => response.json())
+            .then((data) => setDataAccommodation(data))
     }, [])
 
     return <React.Fragment>
