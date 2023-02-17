@@ -4,9 +4,7 @@ import './cardAccommodation.scss';
 function cardAccommodation ({img, children}) {
     return <article className='cardAccommodation'>
         <img src={img} alt="" />
-        <div className='overlayImg'>
-            <p>{children ? children : 'Titre de la location'}</p>
-        </div>
+        <p>{children ? children : 'Titre de la location'}</p>
     </article>
 }
 

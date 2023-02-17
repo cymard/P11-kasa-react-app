@@ -4,24 +4,27 @@
     border-radius: 10px;
     position: relative;
 
+    &::after {
+        content: '';
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 120%);
+        border-radius: 10px;
+    }
+
     img {
         object-fit: cover;
         height: 100%;
         border-radius: 10px;
     }
 
-    .overlayImg {
+    p {
+        z-index: 2;
         position: absolute;
-        top: 0;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 1) 120%);
-        height: 100%;
-        width: 100%;
-        border-radius: 10px;
-        padding: 20px;
-
-        p {
-            position: absolute;
-            bottom: 20px;
-        }
+        bottom: 20px;
+        padding-left: 20px;
     }
 }

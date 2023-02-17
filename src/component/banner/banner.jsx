@@ -2,12 +2,10 @@ import React from 'react';
 import './banner.scss';
 
 function Banner ({src, alt, children}) {
-    return <div className='banner' role='banner'>
+    return <header>
         <img src={src} alt={alt}/>
-        <div className='overlayImg'>
-            <p>{children}</p>
-        </div>
-    </div>
+        <p>{children}</p>
+    </header>
 }
 
 export default Banner;
