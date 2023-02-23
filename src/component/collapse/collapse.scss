@@ -1,0 +1,36 @@
+@import '../../style/_variable';
+
+.collapse {
+    margin-bottom: 20px;
+
+    .collapseHeader {
+        background-color: $color-theme-primary;
+        width: 100%;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            color: #FFFFFF;
+            font-size: 13px;
+            font-family: $font-stack;
+            margin-bottom: 0;
+        }
+
+        span {
+            color: #FFFFFF;
+            font-size: 13px;
+            font-family: $font-stack;
+        }
+    }
+
+    .collapseBody {
+        background-color: #F7F7F7;
+        padding: 20px 10px 5px 10px;
+        color: $color-theme-primary;
+        font-size: 12px;
+        font-family: $font-stack;
+        font-weight: 400;
+    }
+}

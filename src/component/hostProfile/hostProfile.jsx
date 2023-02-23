@@ -1,9 +1,10 @@
 import React from 'react';
+import './hostProfile.scss';
 
-function HostProfile () {
-    return <div>
-        <p>Nom <br/> prenom</p>
-        <img src="" alt=""/>
+function HostProfile ({name, picture}) {
+    return <div className='containerProfile'>
+        <p>{name}</p>
+        <img src={picture} alt="" />
     </div>
 }
 

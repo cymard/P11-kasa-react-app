@@ -1,0 +1,40 @@
+@import '../../style/_variable.scss';
+
+.accommodation {
+    padding: 0 20px;
+    section {
+        div {
+            h1 {
+                color: $color-theme-primary;
+                font-family: $font-stack;
+                font-size: 18px;
+                padding: 5px 0;
+            }
+
+            p {
+                color: $color-theme-primary;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .equipment {
+                list-style: none;
+            }
+        }
+
+        .containerProfileAndRating {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+
+            .containerRating {
+                order: -1;
+            }
+        }
+    }
+}

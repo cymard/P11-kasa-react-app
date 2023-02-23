@@ -1,0 +1,17 @@
+@import '../../style/_variable';
+
+.containerProfile {
+    display: flex;
+    max-width: 30%;
+
+    p {
+        padding-right: 10px;
+        word-break: break-word;
+    }
+
+    img {
+        height: 34px;
+        width: 34px;
+        border-radius: 50%;
+    }
+}

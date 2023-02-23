@@ -1,0 +1,41 @@
+.slideShow {
+    height: 335px;
+    position: relative;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    span {
+        color: #FFFFFF;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        font-size: 20px;
+        height: 30px;
+        width: 30px;
+    }
+
+    .leftArrow {
+        left: 10px;
+    }
+
+    .rightArrow {
+        right: 10px;
+        text-align: right;
+    }
+
+    .numbering {
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        right: 50%;
+        font-size: 20px;
+        @media only screen and (max-width: 1024px) {
+            display: none;
+        }
+    }
+}

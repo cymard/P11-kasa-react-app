@@ -1,0 +1,14 @@
+@import '../../style/_variable.scss';
+
+.tags {
+    background-color: $color-theme-primary;
+    color: #FFF;
+    border-radius: 5px;
+    font-size: 10px;
+    font-family: $font-stack;
+    text-align: center;
+    width: fit-content;
+    padding: 2px 30px;
+    height: 18px;
+    margin: 0 10px 10px 0;
+}
