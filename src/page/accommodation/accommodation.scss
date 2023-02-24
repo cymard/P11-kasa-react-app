@@ -2,8 +2,13 @@
 
 .accommodation {
     padding: 0 20px;
+    p {
+        color: $color-theme-primary;
+        font-size: 14px;
+    }
+
     section {
-        div {
+        .containerLocationinformations {
             h1 {
                 color: $color-theme-primary;
                 font-family: $font-stack;
@@ -12,8 +17,6 @@
             }
 
             p {
-                color: $color-theme-primary;
-                font-size: 14px;
                 margin-bottom: 10px;
             }
 

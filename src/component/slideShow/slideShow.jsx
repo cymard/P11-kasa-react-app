@@ -28,7 +28,7 @@ function SlideShow ({ pictures }) {
     return <div className='slideShow'>
         <img src={pictures[arrayIndex]} alt=""/>
         {pictures.length > 1 &&
-            <React.Fragment>
+            <>
                 <span onClick={() => previousSlide()} className='leftArrow'>
                     <i className="fa-solid fa-chevron-left"></i>
                 </span>
@@ -36,7 +36,7 @@ function SlideShow ({ pictures }) {
                     <i className="fa-solid fa-chevron-right"></i>
                 </span>
                 <p className='numbering'>{index + '/' + pictures.length}</p>
-            </React.Fragment>
+            </>
         }
     </div>
 }
