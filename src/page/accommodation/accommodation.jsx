@@ -50,7 +50,7 @@ function Accommodation () {
                                 name={accommodationData.data.host.name}
                                 picture={accommodationData.data.host.picture}
                             />
-                            <StarsRating startRating={0} rating={accommodationData.data.rating} endRating={5} />
+                            <StarsRating rating={accommodationData.data.rating} />
                         </div>
                     </section>
                     <section>
