@@ -2,7 +2,6 @@ import React from 'react';
 import './starsRating.scss'
 
 function StarsRating ({rating}) {
-
     return <div className='containerRating'>
         {[...Array(5)].map((star, index) => {
             index += 1;

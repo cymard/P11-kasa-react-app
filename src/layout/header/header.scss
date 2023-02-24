@@ -17,10 +17,6 @@
 
     img {
         width: 140px;
-
-        @media only screen and (min-width: 1024px) {
-            width: 115px;
-        }
     }
 
     ul {
@@ -44,7 +40,7 @@
                 @media only screen and (min-width: 1024px) {
                     text-transform: none;
                     white-space: normal;
-                    font-size: initial;
+                    font-size: 20px;
                 }
             }
         }

@@ -7,17 +7,31 @@
         font-size: 14px;
     }
 
-    section {
+    .informationSection {
+        @media only screen and (min-width: 1024px) {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0 10px 0;
+        }
+
         .containerLocationinformations {
             h1 {
                 color: $color-theme-primary;
                 font-family: $font-stack;
                 font-size: 18px;
                 padding: 5px 0;
+
+                @media only screen and (min-width: 1024px) {
+                    font-size: 36px;
+                    padding-top: 0;
+                }
             }
 
             p {
                 margin-bottom: 10px;
+                @media only screen and (min-width: 1024px) {
+                    font-size: 18px;
+                }
             }
 
             ul {
@@ -35,8 +49,15 @@
             justify-content: space-between;
             padding: 5px 0;
 
-            .containerRating {
-                order: -1;
+            @media only screen and (min-width: 1024px) {
+                flex-direction: column;
+                text-align: right;
+            }
+
+            @media only screen and (max-width: 1024px) {
+                .containerRating {
+                    order: -1;
+                }
             }
         }
     }

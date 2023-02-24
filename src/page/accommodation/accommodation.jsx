@@ -32,7 +32,7 @@ function Accommodation() {
             {isLoaded ?
                 <>
                     <SlideShow pictures={accomodation.pictures}/>
-                    <section>
+                    <section className='informationSection'>
                         <div className='containerLocationinformations'>
                             <h1>{accomodation.title}</h1>
                             <p>{accomodation.location}</p>
