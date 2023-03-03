@@ -3,7 +3,12 @@
 .collapse {
     margin-bottom: 20px;
 
+    @media only screen and (min-width: 1024px) {
+        width: 50%;
+    }
+
     .collapseHeader {
+        cursor: pointer;
         background-color: $color-theme-primary;
         width: 100%;
         padding: 5px 10px;
@@ -11,17 +16,30 @@
         display: flex;
         justify-content: space-between;
 
+        @media only screen and (min-width: 1024px) {
+            height: 50px;
+            align-items: center;
+            padding: 5px 10px 5px 20px;
+            border-radius: 10px;
+        }
+
         p {
             color: #FFFFFF;
             font-size: 13px;
             font-family: $font-stack;
             margin-bottom: 0;
+            @media only screen and (min-width: 1024px) {
+                font-size: 16px;
+            }
         }
 
         span {
             color: #FFFFFF;
             font-size: 13px;
             font-family: $font-stack;
+            @media only screen and (min-width: 1024px) {
+                font-size: 25px;
+            }
         }
     }
 
@@ -32,5 +50,12 @@
         font-size: 12px;
         font-family: $font-stack;
         font-weight: 400;
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 15px;
+            list-style: none;
+            border-radius: 10px;
+            min-height: 200px;
+        }
     }
 }

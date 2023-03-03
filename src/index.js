@@ -10,12 +10,10 @@ import './style/style.scss';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <React.StrictMode>
-          <BrowserRouter>
-              <Router/>
-              <Footer/>
-          </BrowserRouter>
-    </React.StrictMode>
+    <BrowserRouter>
+      <Router/>
+      <Footer/>
+    </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -11,10 +11,8 @@ function Collapse ({name, children}) {
         >
             <p>{name}</p>
             <span>
-                {collapseState
-                ? <i className='fa-solid fa-chevron-down'></i>
-                : <i className='fas fa-chevron-up'></i>
-            }</span>
+                <i className={collapseState ? 'fas fa-chevron-up' : 'fas fa-chevron-down'}></i>
+            </span>
         </div>
         {collapseState && <div className='collapseBody'>{children}</div>}
     </div>

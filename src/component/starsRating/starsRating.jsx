@@ -1,5 +1,5 @@
 import React from 'react';
-import './starsRating.scss'
+import './starsRating.scss';
 
 function StarsRating ({rating}) {
     return <div className='containerRating'>

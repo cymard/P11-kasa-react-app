@@ -7,14 +7,12 @@
         height: 30px;
 
         .star {
-            @media only screen and (max-width: 1024px) {
-                height: 60px;
-            }
-            background-color: transparent;
-            border: none;
-            outline: none;
-            cursor: pointer;
             margin-right: 3px;
+
+            @media only screen and (min-width: 1024px) {
+                font-size: 30px;
+                margin-right: 5px;
+            }
         }
     }
 

@@ -14,7 +14,7 @@ function Home() {
         data !== undefined && setDataAccommodation(data);
     }, [data])
 
-    return <React.Fragment>
+    return <>
         <Header pageName='home'/>
         {dataAccommodation.length > 0 && <main className='homeMain'>
             <Banner src={paysageMer} alt="image d'un paysage">Chez vous, partout et ailleurs</Banner>
@@ -31,7 +31,7 @@ function Home() {
             </section>
         </main>
         }
-    </React.Fragment>
+    </>
 }
 
 export default Home;
