@@ -8,12 +8,14 @@ import { useParams } from 'react-router-dom';
 import useFetch from '../../customHooks/useFetch';
 import Collapse from '../../component/collapse/collapse';
 import Tag from '../../component/tag/tag';
+import { useNavigate } from 'react-router-dom';
 
 function Accommodation() {
     const {id} = useParams();
     const {data} = useFetch('../data.json');
     const [accomodation, setAccomodation] = useState([]);
     const [isLoaded, setIsLoaded] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (data !== undefined && data.length > 0) {
@@ -21,6 +23,10 @@ function Accommodation() {
                 if (element.id === id) {
                     setAccomodation(element)
                     setIsLoaded(true)
+                }
+
+                if (data.every(element => element.id !== id)) {
+                    navigate('/error404');
                 }
             })
         }

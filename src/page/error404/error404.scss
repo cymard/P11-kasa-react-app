@@ -1,0 +1,48 @@
+@import '../../style/_variable.scss';
+
+#error404-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 50px;
+
+    @media only screen and (min-width: 1024px) {
+        padding: 80px 50px;
+    }
+
+    section {
+        padding-bottom: 130px;
+
+        p {
+            color: $color-theme-primary;
+            text-align: center;
+            font-weight: 400;
+
+            @media only screen and (min-width: 1024px) {
+                font-size: 36px;
+            }
+
+            &:nth-of-type(1) {
+                font-size: 100px;
+                font-weight: 700;
+                line-height: 120px;
+
+                @media only screen and (min-width: 1024px) {
+                    font-size: 260px;
+                    line-height: initial;
+                }
+            }
+        }
+    }
+
+    a {
+        text-decoration: underline;
+        color: $color-theme-primary;
+        font-family: $font-stack;
+        font-size: 14px;
+
+        @media only screen and (min-width: 1024px) {
+            font-size: 18px;
+        }
+    }
+}

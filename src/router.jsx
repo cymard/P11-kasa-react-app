@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './page/home/home';
 import About from './page/about/about';
 import Accommodation from './page/accommodation/accommodation';
-import Error404 from './page/error404';
+import Error404 from './page/error404/error404';
 
 function Router () {
     return <Routes>
