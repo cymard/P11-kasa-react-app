@@ -50,7 +50,7 @@ function Accommodation() {
                             <StarsRating ratingNumber={accomodation.rating}/>
                         </div>
                     </section>
-                    <section className='dropdownContainer'>
+                    <section className='collapseContainer'>
                         <Collapse name='Description'>{accomodation.description}</Collapse>
                         <Collapse name='Équipements'>
                             {accomodation.equipments.map((equipment, index) => <p className='equipment' key={index}>{equipment}</p>)}
