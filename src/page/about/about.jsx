@@ -29,7 +29,7 @@ function About () {
     return <>
         <Header pageName='about'/>
         <main id="about-container">
-            <Banner src={valleyLandscape} alt='valley landscape'/>
+            <Banner src={valleyLandscape} alt="paysage d\'une vallée avec des montagnes"/>
             <section>
                 {collapseData.map((element, index) => <Collapse name={element.title} key={index}>{element.content}</Collapse>)}
             </section>
