@@ -4,10 +4,10 @@ import Header from '../../layout/header/header';
 
 function About () {
 
-    return <React.Fragment>
+    return <>
         <Header pageName='about'/>
         <div className='test'>About</div>
-    </React.Fragment>
+    </>
 }
 
 export default About;

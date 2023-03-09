@@ -1,13 +1,11 @@
 import React from 'react';
 import './cardAccommodation.scss';
 
-function cardAccommodation ({img, children}) {
-    return <article className='cardAccommodation'>
+function cardAccommodation ({img, id, children}) {
+    return <a href={'accommodation/'+id} className='cardAccommodation'>
         <img src={img} alt="" />
-        <div className='overlayImg'>
-            <p>{children ? children : 'Titre de la location'}</p>
-        </div>
-    </article>
+        <p>{children ? children : 'Titre de la location'}</p>
+    </a>
 }
 
 export default cardAccommodation;

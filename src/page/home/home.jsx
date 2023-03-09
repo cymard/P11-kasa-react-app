@@ -2,35 +2,36 @@ import React, {useEffect, useState} from 'react';
 import CardAccommodation from '../../component/cardAccommodation/cardAccommodation';
 import Banner from '../../component/banner/banner';
 import './home.scss';
-import paysageMer from './homeImages/paysage-mer.png';
+import paysageMer from './images/paysage-mer.png';
 import Header from '../../layout/header/header';
-import data from '../../json/data.json';
+import useFetch from '../../customHooks/useFetch';
 
 function Home() {
-
-    const [dataAccommodation, setDataAccommodation] = useState([]);
+    const [dataAccommodations, setDataAccommodations] = useState([]);
+    const {data} = useFetch('data.json');
 
     useEffect(() => {
-        setDataAccommodation(data);
-    }, [])
+        data !== undefined && setDataAccommodations(data);
+    }, [data])
 
-    return <React.Fragment>
+    return <>
         <Header pageName='home'/>
-        { dataAccommodation.length > 0 && <main>
-                <Banner src={paysageMer} alt="image d\'un paysage">Chez vous, partout et ailleurs</Banner>
-                <section>
-                    { dataAccommodation.map(accommodation =>
-                        <CardAccommodation
-                            img={accommodation.cover}
-                            key={accommodation.id}
-                        >
-                            {accommodation.title}
-                        </CardAccommodation>
-                    )}
-                </section>
-            </main>
+        {dataAccommodations.length > 0 && <main className='homeMain'>
+            <Banner src={paysageMer} alt="image d'un paysage">Chez vous, partout et ailleurs</Banner>
+            <section>
+                {dataAccommodations.map(accommodation =>
+                    <CardAccommodation
+                        img={accommodation.cover}
+                        id={accommodation.id}
+                        key={accommodation.id}
+                    >
+                        {accommodation.title}
+                    </CardAccommodation>
+                )}
+            </section>
+        </main>
         }
-    </React.Fragment>
+    </>
 }
 
 export default Home;

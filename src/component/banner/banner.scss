@@ -1,47 +1,37 @@
 @import '../../style/_variable.scss';
 
-.banner {
+main > header {
+    height: 110px;
     position: relative;
+
+    @media only screen and (min-width: 1024px) {
+        height: initial;
+    }
 
     img {
         height: 100%;
-        border-radius: 25px;
+        border-radius: 10px;
+        object-fit: cover;
+        filter: brightness(0.7);
+
+        @media only screen and (min-width: 1024px) {
+            border-radius: 25px;
+        }
     }
 
-    .overlayImg {
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.3);
-        height: 100%;
+    p {
+        font-size: 24px;
+        line-height: 100%;
         width: 100%;
-        border-radius: 25px;
+        height: 100%;
+        position: absolute;
         top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 35px 0 0 16px;
 
-        p {
+        @media only screen and (min-width: 1024px) {
             font-size: 35px;
-        }
-    }
-
-    @media only screen and (max-width: 375px) {
-        height: 110px;
-
-        img {
-            border-radius: 10px;
-            object-fit: cover;
-        }
-
-        .overlayImg {
-            border-radius: 10px;
-            justify-content: left;
-            padding-left: 20px;
-
-            p {
-                font-size: 24px;
-                line-height: 100%;
-                width: 70%;
-            }
+            text-align: center;
+            padding: 7% 0 0 0;
         }
     }
 }

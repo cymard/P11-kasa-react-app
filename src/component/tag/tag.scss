@@ -1,0 +1,18 @@
+@import '../../style/_variable.scss';
+
+.tags {
+    background-color: $color-theme-primary;
+    color: #FFF;
+    border-radius: 5px;
+    font-size: 10px;
+    font-family: $font-stack;
+    text-align: center;
+    width: fit-content;
+    padding: 2px 25px;
+    margin: 0 10px 10px 0;
+
+    @media only screen and (min-width: 1024px) {
+        border-radius: 7px;
+        font-size: 11px;
+    }
+}
