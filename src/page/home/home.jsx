@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import CardAccommodation from '../../component/cardAccommodation/cardAccommodation';
 import Banner from '../../component/banner/banner';
 import './home.scss';
-import paysageMer from './images/paysage-mer.png';
+import beachLandscape from './images/beach-landscape.png';
 import Header from '../../layout/header/header';
 import useFetch from '../../customHooks/useFetch';
 
@@ -17,7 +17,7 @@ function Home() {
     return <>
         <Header pageName='home'/>
         {dataAccommodations.length > 0 && <main className='homeMain'>
-            <Banner src={paysageMer} alt="image d'un paysage">Chez vous, partout et ailleurs</Banner>
+            <Banner src={beachLandscape} alt="image d'un paysage">Chez vous, partout et ailleurs</Banner>
             <section>
                 {dataAccommodations.map(accommodation =>
                     <CardAccommodation
