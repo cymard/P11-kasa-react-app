@@ -47,13 +47,13 @@ function Accommodation() {
                                 name={accomodation.host.name}
                                 picture={accomodation.host.picture}
                             />
-                            <StarsRating rating={accomodation.rating}/>
+                            <StarsRating ratingNumber={accomodation.rating}/>
                         </div>
                     </section>
                     <section className='dropdownContainer'>
                         <Collapse name='Description'>{accomodation.description}</Collapse>
                         <Collapse name='Équipements'>
-                            {accomodation.equipments.map((equipment, index) => <li className='equipment' key={index}>{equipment}</li>)}
+                            {accomodation.equipments.map((equipment, index) => <p className='equipment' key={index}>{equipment}</p>)}
                         </Collapse>
                     </section>
                 </>

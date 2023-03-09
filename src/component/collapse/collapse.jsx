@@ -2,20 +2,20 @@ import React, { useState } from 'react';
 import './collapse.scss';
 
 function Collapse ({name, children}) {
-    const [collapseState, setCollapseState] = useState(false);
+    const [isCollapseOpen, setIsCollapseOpen] = useState(false);
 
-    return <div className='collapse'>
-        <div
-            onClick={() => setCollapseState(collapseState => !collapseState)}
+    return <details className='collapse'>
+        <summary
+            onClick={() => setIsCollapseOpen(isCollapseOpen => !isCollapseOpen)}
             className='collapseHeader'
         >
             <p>{name}</p>
             <span>
-                <i className={collapseState ? 'fas fa-chevron-up' : 'fas fa-chevron-down'}></i>
+                <i className={isCollapseOpen ? 'fas fa-chevron-up' : 'fas fa-chevron-down'}></i>
             </span>
-        </div>
-        {collapseState && <div className='collapseBody'>{children}</div>}
-    </div>
+        </summary>
+        {isCollapseOpen && <div className='collapseBody'>{children}</div>}
+    </details>
 }
 
 export default Collapse;

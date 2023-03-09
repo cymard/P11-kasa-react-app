@@ -28,6 +28,7 @@
             font-size: 13px;
             font-family: $font-stack;
             margin-bottom: 0;
+            
             @media only screen and (min-width: 1024px) {
                 font-size: 16px;
             }
@@ -37,6 +38,7 @@
             color: #FFFFFF;
             font-size: 13px;
             font-family: $font-stack;
+
             @media only screen and (min-width: 1024px) {
                 font-size: 25px;
             }
@@ -56,6 +58,10 @@
             list-style: none;
             border-radius: 10px;
             min-height: 200px;
+        }
+
+        .equipment {
+            font-weight: 400;
         }
     }
 }
