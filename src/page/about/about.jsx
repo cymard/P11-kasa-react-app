@@ -6,7 +6,6 @@ import Banner from '../../component/banner/banner';
 import Collapse from '../../component/collapse/collapse';
 
 function About () {
-
     const [collapseData, setCollapseData] = useState([
         {
             title: 'Fiabilité',
