@@ -5,7 +5,7 @@ import './header.scss';
 
 function Header ({pageName}) {
     return <header>
-        <img src={kasaLogoOrange} alt='logo KASA orange'/>
+        <a href='../'><img src={kasaLogoOrange} alt='logo KASA orange'/></a>
         <nav>
             <ul>
                 <li><Link className={pageName === 'home' ? 'underline' : null} to='/'>Accueil</Link></li>
